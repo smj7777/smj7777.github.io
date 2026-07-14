@@ -466,10 +466,11 @@ main {
 
 .project-image-one {
   background:
-    linear-gradient(rgba(9,14,28,.22), rgba(9,14,28,.28)),
-    url("assets/project1-1.jpg") center/cover no-repeat,
-    linear-gradient(135deg,#0b1328,#1c2e4e);
+    linear-gradient(rgba(9, 14, 28, 0.22), rgba(9, 14, 28, 0.28)),
+    url("assets/project1.jpg") center/cover no-repeat,
+    linear-gradient(135deg, #0b1328, #1c2e4e);
 }
+
 .project-image-two {
   background:
     linear-gradient(rgba(9, 14, 28, 0.22), rgba(9, 14, 28, 0.28)),
