@@ -150,3 +150,26 @@ if (themeToggle) {
     }
   });
 }
+
+// ===== Project Sliders =====
+
+function createSlider(id) {
+    const slider = document.getElementById(id);
+    if (!slider) return;
+
+    const slides = slider.querySelectorAll(".slide");
+    let current = 0;
+
+    function show(index) {
+        slides.forEach(slide => slide.classList.remove("active"));
+        slides[index].classList.add("active");
+    }
+
+    setInterval(() => {
+        current = (current + 1) % slides.length;
+        show(current);
+    }, 3000);
+}
+
+createSlider("slider1");
+createSlider("slider2");
