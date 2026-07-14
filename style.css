@@ -462,8 +462,8 @@ main {
 
 /* ===== Project Slider ===== */
 
-.project-slider{
-    position: relative;
+.slider{ 
+  position: relative;
     width: 100%;
     height: 320px;
     background:#1b2233;
