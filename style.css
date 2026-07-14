@@ -460,21 +460,33 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.10);
 }
 
-.project-image {
-  height: 240px;
+/* ===== Project Slider ===== */
+
+.project-slider{
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background:#1b2233;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-.project-image-one {
-  background:
-    linear-gradient(rgba(9,14,28,.22), rgba(9,14,28,.28)),
-    url("assets/project1-1.jpg") center/cover no-repeat,
-    linear-gradient(135deg,#0b1328,#1c2e4e);
+.slide{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:contain;   /* يعرض الصورة كاملة */
+    object-position:center;
+    opacity:0;
+    transition:opacity .5s ease;
+    background:#1b2233;
 }
-.project-image-two {
-  background:
-    linear-gradient(rgba(9, 14, 28, 0.22), rgba(9, 14, 28, 0.28)),
-    url("assets/project2.jpg") center/cover no-repeat,
-    linear-gradient(135deg, #131b30, #24395e);
+
+.slide.active{
+    opacity:1;
 }
 
 .project-body {
