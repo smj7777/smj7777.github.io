@@ -486,8 +486,9 @@ main {
     opacity:1;
 }
 
-.project-body {
-  padding: 24px;
+.project-body{
+    padding:24px;
+    display:block;
 }
 
 .project-body h3 {
