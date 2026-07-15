@@ -336,9 +336,10 @@
 
     <article class="project-card">
 
-      <img src="assets/img16.jpg"
+     <img src="assets/img16.jpg"
      alt="CompTIA Security+"
-     class="certificate-image">
+     class="certificate-image"
+     onclick="openCertificate(this.src)">
 
       <div class="project-body">
         <h3>CompTIA Security+</h3>
@@ -394,5 +395,8 @@
   <a href="#home" class="scroll-top" aria-label="Back to top">↑</a>
 
   <script src="script.js"></script>
+  <div id="certificateModal" class="certificate-modal" onclick="closeCertificate()">
+    <img id="certificatePreview">
+</div>
 </body>
 </html>
