@@ -708,3 +708,39 @@ body.light-theme .location-icon {
 .certificate-image{
     cursor:zoom-in;
 }
+/* ===========================
+   Achievements
+=========================== */
+
+.achievement-list{
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+}
+
+.achievement-card{
+    background:rgba(24,32,50,.42);
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:28px;
+    padding:28px;
+    backdrop-filter:blur(16px);
+    -webkit-backdrop-filter:blur(16px);
+    box-shadow:var(--shadow);
+    transition:.3s;
+}
+
+.achievement-card:hover{
+    transform:translateY(-5px);
+    border-color:#2ec5ff;
+}
+
+.achievement-card h3{
+    font-size:26px;
+    margin-bottom:14px;
+}
+
+.achievement-card p{
+    color:rgba(232,238,251,.82);
+    line-height:1.8;
+    font-size:18px;
+}
