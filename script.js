@@ -171,3 +171,11 @@ function createSlider(id) {
 
 createSlider("slider1");
 createSlider("slider2");
+function openCertificate(src){
+    document.getElementById("certificateModal").style.display = "flex";
+    document.getElementById("certificatePreview").src = src;
+}
+
+function closeCertificate(){
+    document.getElementById("certificateModal").style.display = "none";
+}
